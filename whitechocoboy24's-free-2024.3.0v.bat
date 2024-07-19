@@ -6,7 +6,7 @@
 	If "%1"=="%params%" (echo Elevating UAC for Administrator Privileges failed&echo Right click on the script and select 'Run as administrator'&echo Press any key to exit...&pause>nul 2>&1&exit)
 	cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "%~0", "%params%", "", "runas", 1 > "%temp%\getadmin.vbs"&cscript //nologo "%temp%\getadmin.vbs"&exit
 	:GotPrivileges
-	::::::::::::::::::::::::::::
+	:::::::::::::::::::::::::::
 	color 04
 	title Online KMS Activation Script v5.0
 	setlocal enabledelayedexpansion
